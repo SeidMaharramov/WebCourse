@@ -1,0 +1,36 @@
+:root {
+    --background-image: url('./assets/images/1.jpg');
+    --pColor:rgb(233, 233, 233);
+    --logocolor:rgb(255, 149, 0);
+    --h1color:rgb(209, 159, 67);
+    --logincolor:rgb(209, 128, 74);
+  }
+.hamsi{
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    background-position: center;
+    flex-direction: column;
+    gap: 12rem;
+}
+.ortahisse{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+@media (max-width:600px){
+  .hamsi{
+ 
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .ortahisse{
+    gap: 3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,78 @@
+:root {
+    --pColor:rgb(233, 233, 233);
+    --logocolor:rgb(255, 149, 0);
+    --h1color:rgb(209, 159, 67);
+    --logincolor:rgb(209, 128, 74);
+  }
+
+.login{
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.638);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.3rem;
+    width: 16rem;
+    margin-bottom: 2rem;
+     h2{
+        color: var(--h1color);
+        text-align: center;
+        width: 13rem;
+        margin-top: 0.4rem;
+        background-color: white;
+        border-radius: 12px;
+    }
+        .giris{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+                button{
+                    border: none;
+                    font-weight: 700;
+                    color: black;
+                    width: 11rem;
+                    border-radius: 12px;
+                    height: 2rem;
+                    background-color: var(--logincolor);
+                }
+                input{
+                    color: var(--logocolor);
+                    font-size:1rem;
+                    border: none;
+                    height: 2rem;
+                    text-align: center;
+                        background-color: transparent;
+                        border-bottom: 2px solid white;
+                        &:focus{
+                            outline: none;
+                        }
+                        &::placeholder{
+                            color:var(--pColor);
+                        }
+                    }
+                a{color: var(--logocolor);  
+                text-decoration: none;
+                }
+                p{
+                    color: var(--pColor);
+                }
+                    .extra{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.3rem;
+                        p{
+                            color: var(--pColor);
+                        }
+                            .iconlar{
+                                color: var(--pColor);
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 1rem;
+                            }
+                    }
+        }
+        
+}
